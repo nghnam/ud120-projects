@@ -37,7 +37,7 @@ labels_train = labels_train[:len(labels_train)/100]
 
 t0 = time.time()
 
-clf = SVC(kernel='rbf')
+clf = SVC(kernel='rbf', C=10000)
 clf.fit(features_train, labels_train)
 preds = clf.predict(features_test)
 print accuracy_score(labels_test, preds)
