@@ -32,8 +32,8 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 # Slice the training dataset down to 1%
-features_train = features_train[:len(features_train)/100]
-labels_train = labels_train[:len(labels_train)/100]
+#features_train = features_train[:len(features_train)/100]
+#labels_train = labels_train[:len(labels_train)/100]
 
 t0 = time.time()
 
